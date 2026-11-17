@@ -1,0 +1,5 @@
+# Preserve Room database classes and constructors used through reflection.
+# Required for WorkManager database initialization in optimized builds.
+-keep class * extends androidx.room.RoomDatabase {
+    <init>();
+}
